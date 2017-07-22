@@ -264,3 +264,29 @@ blockquote {
 .facilities img {
   max-height: 100px;
 }
+
+.plans {
+  display: flex;
+  width: 60%;
+  font-family: Merriweather, serif;
+  font-size: 19px;
+}
+
+td {
+  padding: 20px 10px;
+  border: 1px solid black;
+}
+
+.table-empty {
+  width: 20%;
+  margin: 0px;
+}
+
+table {
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+
+.bg {
+  background-color: #f0e6c9
+}
