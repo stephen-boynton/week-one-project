@@ -171,9 +171,96 @@ main > h1, main > h2 {
 }
 
 footer {
+  margin-top: 40px;
   display: flex;
   width: 100%;
   color: white;
   padding: 40px;
   background: #323232;
+}
+
+/*===================================ABOUT PAGE CSS ==============*/
+
+.container-about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.main-about p {
+  font-family: Merriweather, serif;
+  font-size: 20px;
+}
+
+.intro, .history {
+  max-width: 60%;
+}
+
+.intro img {
+  max-height: 100px;
+  float: left;
+}
+
+blockquote {
+  margin: 0;
+  font-family: Merriweather, serif;
+  font-size: 20px;
+  font-style: italic;
+  border-left: 2px solid gray;
+  padding-left: 30px;
+  color: gray;
+}
+
+.main-about h3 {
+  font-size: 26px;
+  font-weight: lighter;
+}
+
+.room {
+  background-image: url("images/background-3.jpg");
+  background-size: cover;
+  background-position: 90% 30%;
+  width: 100%;
+  text-align:center;
+  padding: 150px 0px;
+  color: white;
+}
+
+.facilities {
+  display: flex;
+  max-width: 60%;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.facilities h3 {
+  flex-basis: 100%;
+}
+
+.fac-row {
+  display: flex;
+  flex-basis: 100%;
+}
+
+.fac-row p {
+  max-width: 80%;
+  padding: 0;
+  margin: 0;
+}
+
+.fac-row figure {
+  max-width: 20%;
+  margin: 10px;
+  padding: 0;
+}
+
+.facilities img {
+  max-height: 100px;
 }
