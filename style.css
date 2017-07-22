@@ -24,7 +24,29 @@ body {
 }
 
 .container {
-  padding: 0
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-family: 'Merriweather', serif;
+  font-size:  60px;
+  font-weight: normal;
+  margin: 20px 0px 10px 0px;
+}
+
+h2 {
+  font-family: 'Merriweather', serif;
+  font-size:  30px;
+  font-weight: lighter;
+  margin-bottom: 40px;
+}
+
+h3 {
+  font-family: 'Merriweather', serif;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 header {
@@ -32,6 +54,8 @@ header {
   align-items: center;
   padding: 10px;
   background-color: white;
+  position: fixed;
+  width: 100%;
 }
 
 .logo > img {
@@ -50,43 +74,106 @@ nav {
 nav a {
   margin: 10px;
   text-transform: uppercase;
+  font-family: Roboto, sans-serif;
+  color: black;
+}
+
+main {
+  margin-top: 75px;
+  position: static;
 }
 
 main > h1, main > h2 {
   text-align: center;
+  display: block;
 }
 
 .row-1 {
   display: flex;
   flex-basis: 100%;
   padding: 0px 10px;
-  justify-content: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.row-1 h3, .row-2 h3 {
+  align-self: flex-end;
+  color: #F2F1E8;
+  background: #323232;
+  padding: 10px;
 }
 
 .image1-row1 {
-  margin-right: 10px;
+  display: flex;
   background-image: url("images/product-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 300px;
-  flex-basis: 60%;
+  flex-basis: 57%;
 }
 
 .image2-row1 {
-
+  display: flex;
   background-image: url("images/product-2.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
-  height: 300px;
+  background-size: cover;
   flex-basis: 20%;
   background-position: center;
 }
 
 .image3-row1 {
-
+  display: flex;
   background-image: url("images/product-3.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
-  height: 300px;
+  background-size: cover;
   flex-basis: 20%;
+}
+/* ====================================== ROW 2 =============*/
+.row-2 {
+  display: flex;
+  flex-basis: 100%;
+  padding: 0px 10px;
+  justify-content: space-between;
+}
+
+.image1-row2 {
+  display: flex;
+  background-image: url("images/product-4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  flex-basis: 20%;
+}
+
+.image2-row2 {
+  display: flex;
+  background-image: url("images/product-5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-basis: 20%;
+  background-position: center;
+}
+
+.image3-row2 {
+  display: flex;
+  background-image: url("images/product-6.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-basis: 35%;
+}
+
+.image4-row2 {
+  display: flex;
+  background-image: url("images/product-7.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-basis: 20%;
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  color: white;
+  padding: 40px;
+  background: #323232;
 }
