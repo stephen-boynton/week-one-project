@@ -16,3 +16,77 @@ Button Text (Hover): #FFFFFF
 Input Border Bottom: #968772
 Input Border Bottom (Focus): #967343
 */
+
+body {
+  background-color: #F2F1E8;
+  box-sizing: border-box;
+  margin:0;
+}
+
+.container {
+  padding: 0
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: white;
+}
+
+.logo > img {
+  max-height: 50px;
+}
+
+.logo {
+  flex-basis: 30%;
+}
+
+nav {
+  flex-basis: 40%;
+  text-align: center;
+}
+
+nav a {
+  margin: 10px;
+  text-transform: uppercase;
+}
+
+main > h1, main > h2 {
+  text-align: center;
+}
+
+.row-1 {
+  display: flex;
+  flex-basis: 100%;
+  padding: 0px 10px;
+  justify-content: center;
+}
+
+.image1-row1 {
+  margin-right: 10px;
+  background-image: url("images/product-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  flex-basis: 60%;
+}
+
+.image2-row1 {
+
+  background-image: url("images/product-2.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 300px;
+  flex-basis: 20%;
+  background-position: center;
+}
+
+.image3-row1 {
+
+  background-image: url("images/product-3.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 300px;
+  flex-basis: 20%;
+}
