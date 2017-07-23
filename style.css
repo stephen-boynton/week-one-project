@@ -56,7 +56,7 @@ header {
   background-color: white;
   position: fixed;
   width: 100%;
-  box-shadow: 0 3px 5px 2px rgba(68, 68, 68, 0.1);
+  box-shadow: 0 1px 5px 2px rgba(68, 68, 68, 0.1);
 }
 
 .logo > a > img {
@@ -183,7 +183,7 @@ main > h1, main > h2 {
 }
 
 footer {
-  margin-top: 40px;
+  margin-top: 20px;
   display: flex;
   width: 100%;
   color: white;
@@ -204,6 +204,11 @@ footer {
   flex-direction: column;
   align-items: center;
   width: 100%;
+  line-height: 3em;
+}
+
+.main-about h1 {
+  margin: 50px 0px;
 }
 
 .main-about p {
@@ -211,11 +216,25 @@ footer {
   font-size: 20px;
 }
 
+.main-about a {
+  color: #968772;
+  transition: color 0.5s;
+}
+
+.main-about a:hove {
+  color: #967343
+}
+
 .intro, .history {
-  max-width: 60%;
+  max-width: 70%;
+}
+
+.history {
+  margin-bottom: 20px;
 }
 
 .intro img {
+  padding: 25px 20px 0px 0px;
   max-height: 100px;
   float: left;
 }
@@ -248,7 +267,7 @@ blockquote {
 
 .facilities {
   display: flex;
-  max-width: 60%;
+  max-width: 70%;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -274,15 +293,20 @@ blockquote {
   padding: 0;
 }
 
+figcaption {
+  line-height: 1.5em;
+}
+
 .facilities img {
   max-height: 100px;
 }
 
 .plans {
   display: flex;
-  width: 60%;
+  width: 70%;
   font-family: Merriweather, serif;
-  font-size: 19px;
+  font-size: 18px;
+  line-height: 1.6em;
 }
 
 td {
@@ -327,8 +351,8 @@ table {
 
 .sign-up-box p {
   margin: 10px 0px 20px 0px;
-  font-size: 25px;
-  font-weight: bold;
+  font-size: 20px;
+  font-family: Merriweather, serif;
 }
 
 .sign-up-box input {
@@ -336,7 +360,7 @@ table {
   border-bottom: 2px solid #968772;
   width: 90%;
   font-size: 20px;
-  margin: 10px 0px 10px 0px;
+  margin: 20px 0px 10px 0px;
   transition: border-bottom-color 1s, width 0.5s;
 }
 
