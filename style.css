@@ -56,9 +56,10 @@ header {
   background-color: white;
   position: fixed;
   width: 100%;
+  box-shadow: 0 3px 5px 2px rgba(68, 68, 68, 0.1);
 }
 
-.logo > img {
+.logo > a > img {
   max-height: 50px;
 }
 
@@ -76,6 +77,15 @@ nav a {
   text-transform: uppercase;
   font-family: Roboto, sans-serif;
   color: black;
+  transition: color 0.5s;
+}
+
+.active {
+  color: #968772;
+}
+
+nav > a:hover {
+  color: #CD5D67;
 }
 
 main {
@@ -87,6 +97,8 @@ main > h1, main > h2 {
   text-align: center;
   display: block;
 }
+
+/* ====================================== ROW 1 =============*/
 
 .row-1 {
   display: flex;
@@ -227,6 +239,7 @@ blockquote {
   background-image: url("images/background-3.jpg");
   background-size: cover;
   background-position: 90% 30%;
+  background-attachment: fixed;
   width: 100%;
   text-align:center;
   padding: 150px 0px;
@@ -289,4 +302,63 @@ table {
 
 .bg {
   background-color: #f0e6c9
+}
+
+/*=======================================Newsletter =================*/
+
+.sign-up-container {
+  min-height: 100vh;
+  background-image: url("images/background-2.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign-up-box {
+  padding: 50px;
+  background-color: white;
+  text-align: center;
+}
+
+.sign-up-box h2 {
+  margin: 0;
+}
+
+.sign-up-box p {
+  margin: 10px 0px 20px 0px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.sign-up-box input {
+  border: none;
+  border-bottom: 2px solid #968772;
+  width: 90%;
+  font-size: 20px;
+  margin: 10px 0px 10px 0px;
+  transition: border-bottom-color 1s, width 0.5s;
+}
+
+.sign-up-box input:focus {
+  outline: none;
+  border-bottom-color: #967343;
+  width: 100%;
+}
+
+.sign-up-box button {
+  padding: 20px;
+  font-size: 20px;
+  margin-top: 20px;
+  background-color: #968772;
+  color: #F2F1E8;
+  border: none;
+}
+
+.sign-up-box  button:hover {
+  background-color: #967343;
+}
+
+.sign-up-footer {
+  margin: 0;
 }
